@@ -1,5 +1,7 @@
 <div class="container">
-  <h1>All lists of movies</h1>
+  <h1>Save any kind of movies</h1>
+   <%= link_to 'Add a movie list', new_list_path %>
+  <h3>My Lists</h3>
   <% @lists.each do |list| %>
   <%= list.name %>
   <% end %>
